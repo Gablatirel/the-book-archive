@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookShare+</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script>
+
+  <!-- EPUB Reader -->
+  <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+</head>
+<body>
+
+<h1>📚 BookShare+</h1>
+
+<div id="auth">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Login</button>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="upload">
+  <input type="file" id="fileInput" accept=".epub,.mobi">
+  <button onclick="uploadBook()">Upload Book</button>
+</div>
+
+<input id="search" placeholder="Search books..." oninput="loadBooks()">
+
+<div id="books"></div>
+
+<div id="reader" class="hidden">
+  <button onclick="closeReader()">Close</button>
+  <div id="viewer"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
