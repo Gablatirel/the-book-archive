@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: #b084f5;
+}
+
+.upload, #auth {
+  margin: 15px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #7a3ff2;
+  color: white;
+  cursor: pointer;
+}
+
+#books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book {
+  background: #1e1e1e;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+#reader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#viewer {
+  height: 90%;
+}
