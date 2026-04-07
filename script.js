@@ -1,11 +1,11 @@
 // 🔥 YOUR FIREBASE CONFIG HERE
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_ID",
-  storageBucket: "YOUR_BUCKET",
-  messagingSenderId: "YOUR_MSG",
-  appId: "YOUR_APP"
+  apiKey: "AIzaSyD-2vP9tlRY8t5-PbX8BP38Et_fwOflQOY",
+  authDomain: "thebookarchive-25563.firebaseapp.com",
+  projectId: "thebookarchive-25563",
+  storageBucket: "thebookarchive-25563.firebasestorage.app",
+  messagingSenderId: "361604208847",
+  appId: "1:361604208847:web:e75c5da8e832003acdbfba"
 };
 
 firebase.initializeApp(firebaseConfig);
